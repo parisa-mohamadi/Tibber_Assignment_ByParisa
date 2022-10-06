@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/powerUpsFragment">
+
+    <fragment
+        android:id="@+id/powerUpsFragment"
+        android:name="com.example.tibber_assignment_byparisa.ui.landing.PowerUpsFragment"
+        android:label="fragment_power_ups"
+        tools:layout="@layout/fragment_power_ups" >
+        <action
+            android:id="@+id/action_powerUpsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.tibber_assignment_byparisa.ui.landing.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+</navigation>

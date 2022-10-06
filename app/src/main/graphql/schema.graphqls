@@ -1,0 +1,17 @@
+
+schema {
+    query: Query
+
+}
+
+type Query {
+    assignmentData: [AssignmentPowerUpType!]
+}
+type AssignmentPowerUpType {
+    title: String!
+    description: String!
+    longDescription: String!
+    connected: Boolean!
+    storeUrl: String!
+    imageUrl: String!
+}
